@@ -27,12 +27,7 @@ endif
 
 .PHONY: all
 all:
-	@$(MAKE) --no-print-directory deps
 	@$(MAKE) --no-print-directory telegraf
-
-.PHONY: deps
-deps:
-	dep ensure -vendor-only
 
 .PHONY: telegraf
 telegraf:
